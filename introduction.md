@@ -15,3 +15,13 @@ Messages are published and subscribed through topics.  Clients can subscribe to 
 - Subscribing to 'energy/+' means subscribing to all underneath energy but not the top level topic.
 
 The string of a topic is arbitrary and determined by the publisher but the length is limited to 64k.
+
+## QOS (Quality of Service)
+
+MQTT has three levels of QOS from 0, 1, 2.  The higher the number the more effort to deliver the message the server needs to make.
+
+- QOS 0 - The message is delivered at most once or not at all.  The message could get lost if the client disconnects.
+
+- QOS 1 - The message is delivered at least once but might be multiple times in case of problems.  The message must be stored until the sender receives an acknowledgement by the receiver.
+
+- QOS 2 - The message is delivered once only and no duplication occures.  The message is stored under the sender recieves acknowledgement that the message has been published by the receiver.  QOS 2 should only be used for vital messages as it is the slowest way of message delivery.
