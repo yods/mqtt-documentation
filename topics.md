@@ -8,3 +8,5 @@ In order to subscribe to messages we first need to connect to a channel.
       (:require [clojurewerkz.machine-head.client :as mh]))
 
     (def channel (mh/connect "tcp://test.mosquitto.org:1883" "demo1"))
+
+Then
