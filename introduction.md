@@ -29,7 +29,7 @@ MQTT has three levels of QOS from 0, 1, 2.  The higher the number the more effor
 
 ## Getting started
 
-You will the clojure mqtt adapter [machine head] (https://github.com/clojurewerkz/machine_head)
+You will the clojure mqtt adapter [machine head] (https://github.com/clojurewerkz/machine_head), not yet ready for production use.
 
 With Leiningen
 [clojurewerkz/machine_head "1.0.0-beta1"]
