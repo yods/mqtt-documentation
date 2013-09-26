@@ -25,3 +25,13 @@ MQTT has three levels of QOS from 0, 1, 2.  The higher the number the more effor
 - QOS 1 - The message is delivered at least once but might be multiple times in case of problems.  The message must be stored until the sender receives an acknowledgement by the receiver.
 
 - QOS 2 - The message is delivered once only and no duplication occures.  The message is stored under the sender recieves acknowledgement that the message has been published by the receiver.  QOS 2 should only be used for vital messages as it is the slowest way of message delivery.
+
+
+## Getting started
+
+You will the clojure mqtt adapter [machine head] (https://github.com/clojurewerkz/machine_head)
+
+With Leiningen
+[clojurewerkz/machine_head "1.0.0-beta1"]
+
+Test mqtt is a handy message broker to use to test out mqtt applications, it can be found at http://test.mosquitto.org/
